@@ -1,4 +1,5 @@
 from draw_graph_1 import draw_graph
+from generate_docx import generate_table
 
 # initial – массы самих колб
 # experimental – все данные в формате || время (сек) | масса колбы с пробой | объем на титрование ||
@@ -66,6 +67,9 @@ filename = "final_data.txt"
 with open(filename, 'a') as file:
 	for item in final_data:
 		file.write(item + "\n")
+
+# создать вордовскую таблицу
+generate_table()
 
 # построить первый график по этим данным
 draw_graph()
