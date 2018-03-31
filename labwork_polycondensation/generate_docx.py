@@ -37,5 +37,9 @@ def generate_table():
 
 	table.style = "Table Grid"
 
+	document.add_paragraph("\nГрафик зависимости 1/(1-p) от времени:\n")
+
+	document.add_picture('time_vs_rate_of_reaction.png')
+
 	document.save('labwork_table.docx')
 	print("Вордовская таблица с названем {} успешно создана!".format('labwork_table.docx'))

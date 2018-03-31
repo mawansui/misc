@@ -68,8 +68,8 @@ with open(filename, 'a') as file:
 	for item in final_data:
 		file.write(item + "\n")
 
-# создать вордовскую таблицу
-generate_table()
-
 # построить первый график по этим данным
 draw_graph()
+
+# создать вордовскую таблицу с картинкой
+generate_table()

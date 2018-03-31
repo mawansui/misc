@@ -32,5 +32,6 @@ def draw_graph():
 	# добавляем прямую линию
 	plt.plot(time, polyfit_line, color="black")
 
-	plt.show()
+	# plt.show()
+	fig.savefig('time_vs_rate_of_reaction.png', dpi=800)
 	print("Угол наклона прямой: %.8f" % (polyfit[0]))
