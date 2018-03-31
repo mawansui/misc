@@ -24,7 +24,7 @@ def draw_graph():
 	ax = fig.add_subplot(111)
 	ax.set_xlabel('Время от начала реакции, сек')
 	ax.set_ylabel('1/(1-p)')
-	ax.text(2000, -0.015, 'Угол наклона прямой: %.8f' % (polyfit[0]), style="italic")
+	ax.text(2000, -0.015, u'tg(α): %.8f' % (polyfit[0]), style="italic")
 
 	# по оси абсцисс – время, по оси ординат – 1/1-p, поэтому:
 	plt.scatter(time, rate, color="black")
